@@ -6,6 +6,13 @@
             <include name="smoke"></include>
         </run>
     </groups>
+
+    <listeners>
+        <listener class-name="com.saucedemo.customlisteners.CustomListeners"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
     <test name="Smoke Test">
         <classes>
             <class name="com.saucedemo.testsuite.LoginPageTest"></class>

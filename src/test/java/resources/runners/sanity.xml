@@ -6,6 +6,12 @@
             <include name="sanity"></include>
         </run>
     </groups>
+
+    <listeners>
+        <listener class-name="com.saucedemo.customlisteners.CustomListeners"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
     <test name="Sanity Test">
         <classes>
             <class name="com.saucedemo.testsuite.LoginPageTest"></class>

@@ -14,7 +14,7 @@ public class BaseTest extends Utilities {
         selectBrowser(browser);
     }
 
-    @AfterMethod(alwaysRun = true)
+    @AfterMethod()
     public void tearDown(){
         closeBrowser();
     }

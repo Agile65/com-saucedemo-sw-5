@@ -1,5 +1,7 @@
 package com.saucedemo.pages;
 
+import com.aventstack.extentreports.Status;
+import com.saucedemo.customlisteners.CustomListeners;
 import com.saucedemo.utilities.Utilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -16,12 +18,17 @@ public class InventoryPage extends Utilities {
     WebElement productsText;
 
     public String getProductText(){
+
         Reporter.log("Get Product Text " + productsText.toString());
+        CustomListeners.test.log(Status.PASS, "Product Text");
         return getTextFromElement(productsText);
+
     }
     public int findActualNumberOfProducts(){
+
         Reporter.log("Finding number of elements" + productsText.getText().toString());
         List<WebElement> productList=findElementsFromWebPage(By.xpath("//img[starts-with(@class,'inventory_item_img')]"));
+        CustomListeners.test.log(Status.PASS, productsText.toString());
         return productList.size();
     }
 

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Login Test"
+<testsuite name="Regression Test"
            tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="0.685">
+           time="1.103">
   <properties />
   
   
-            <testcase name="userShouldLoginSuccessfullyWithValidCredentials" time="0.336" classname="com.saucedemo.testsuite.LoginPageTest" />
-                <testcase name="verifyThatSixProductsAreDisplayedOnPage" time="0.349" classname="com.saucedemo.testsuite.LoginPageTest" />
+            <testcase name="verifyThatSixProductsAreDisplayedOnPage" time="0.590" classname="com.saucedemo.testsuite.LoginPageTest" />
+                <testcase name="userShouldLoginSuccessfullyWithValidCredentials" time="0.513" classname="com.saucedemo.testsuite.LoginPageTest" />
       
 </testsuite>
